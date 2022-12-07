@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&family=Raleway&family=Roboto+Mono&family=Ubuntu&display=swap');
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 18pt;
+    width: 100vw;
+}
+
+footer .content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background-color: rgb(26, 26, 26);
+}
+
+div .icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+.icon-wrapper .footer-icon-class{
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 6px;
+    color: white;
+}
+
+div .footnote{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 55px;
+}
+
+@media (max-width: 420px){
+    div .footnote{
+        font-size: 12px;
+        margin-top: 15px;
+        font-weight: 400;
+    }
+    .icon-wrapper .footer-icon-class{
+        height: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

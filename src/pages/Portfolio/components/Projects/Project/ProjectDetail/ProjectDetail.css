@@ -1,0 +1,22 @@
+div.modal-wrapper .wrapper{
+    height:fit-content;
+    padding: 50px;
+}
+
+.project-detail .header-text {
+    font-size: 18px;
+    font-family:'Roboto'sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+   
+}
+.project-detail .text-content {
+    font-size: 14px;
+    color: rgb(253, 253, 253);
+    font-family:'Roboto'sans-serif;
+    font-weight:400;
+}
+.project-detail{
+    margin-top: 12px;
+    
+}

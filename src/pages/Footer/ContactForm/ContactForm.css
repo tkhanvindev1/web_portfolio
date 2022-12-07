@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --body-font: "Poppins", sans-serif;
+  --root-background: rgb(255, 255, 255);
+  --root-text-color: rgb(54, 54, 54);
+  --header-text-color: rgb(54, 54, 54);
+  --header-text-color-ligth: rgb(107, 107, 107);
+  --hero-button-color: rgb(54, 54, 54);
+  --border-color-light: rgba(107, 107, 107, 0.2);
+  --border-color-lighter: rgba(217, 217, 217, 0.2);
+  --hero-sub-header-fontsize: 3.625rem;
+  --hero-header-fontsize: 1.575rem;
+  --hero-p-fontsize: 1.375rem;
+  --x-small-font-size: 0.875rem;
+  --small-font-size: 1.075rem;
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-bolded: 700;
+}
+
+.contact-form-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  background-color: var(--root-background);
+ 
+}
+.contact-form-div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#username,
+#email,
+#message {
+  width: 40vw;
+  margin: 25px;
+  border-radius: 7px;
+  border: 2px solid var(--border-color-light);
+  background-color: transparent;
+}
+
+.contact-form-div form input {
+  height: 26px;
+}
+.contact-form-div form textarea {
+  height: 300px;
+}
+
+.contact-form-div form h2 {
+  font-size: var(--hero-header-fontsize);
+  text-align: center;
+  color: var(--header-text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.3rem;
+}
+
+.contact-form-div form h3 {
+  text-align: center;
+  color: var(--hero-p-fontsize);
+  font-weight: var(--font-light);
+  color: var(--header-text-color-ligth);
+}
+.contact-form-div form h3 span {
+  margin-left: 15px;
+  color: #3e83d4;
+}
+
+
+.contact-form-div form input::placeholder,
+textarea::placeholder {
+  font-size: var(--small-font-size);
+  font-family: var(--body-font);
+  font-weight: var(--font-light);
+}
+
+.contact-form-div form input[type="text"],
+input[type="email"],
+textarea[type="text"] {
+  font-size: var(--small-font-size);
+  padding: 13px;
+  padding-left: 29px;
+  font-family: var(--body-font);
+  font-weight: var(--font-light);
+}
+
+.contact-form-div form .submit-button {
+  height: 3rem;
+  width: 11rem;
+  font-size: var(--hero-p-fontsize);
+  background-color: var(--hero-button-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.inputs_label {
+  position: absolute;
+  left: 3.2rem;
+  top: 0.7rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  background-color: var(--root-background);
+  color: var(--header-text-color-ligth);
+  font-size: var(--x-small-font-size);
+}
+
+#send_icon{
+  display: flex;
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 420px) {
+  .contact-form-div {
+    width: 100vw;
+  }
+  .contact-form-div form {
+    display: flex;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .contact-form-div form h2 {
+    font-size: 26px;
+    padding-top: 25px;
+  }
+  .contact-form-div form h3 {
+    font-size: 18px;
+  }
+  .contact-form-div form input {
+    height: 25px;
+  }
+  .contact-form-div form input,
+  textarea {
+    width: 80vw;
+    margin: 10;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .contact-form-div form input[type="text"],
+  input[type="email"],
+  textarea[type="text"] {
+    font-size: 14px;
+    text-align: start;
+  }
+  .contact-form-div form .submit-button {
+    width: 80vw;
+    height: 51px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    align-self: center;
+  }
+}

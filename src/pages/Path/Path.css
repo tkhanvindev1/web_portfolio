@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root{
+  --body-font: "Poppins", sans-serif;
+  --root-background:rgb(255, 255, 255);
+  --root-text-color:rgb(54, 54, 54);
+  --header-text-color:rgb(54, 54, 54);
+  --hero-button-color: rgb(54, 54, 54);
+  --header-text-color-ligther:rgb(125, 125, 125);
+  --border-color-ligth:rgba(107, 107, 107, 0.2);
+  --hero-sub-header-fontsize: 3.625rem;
+  --hero-header-fontsize: 1.575rem;
+  --hero-p-fontsize: 1.375rem;
+  --x-small-font-size: 0.775rem;
+  --xx-small-font-size: 0.475rem;
+  --small-font-size: 1.075rem;
+  
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-bolded: 700;
+}
+
+
+.path-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  height: fit-content;
+}
+
+.timeline-wrapper {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+.timeline-wrapper h3 {
+  font-size: var(--hero-header-fontsize);
+  font-weight: var(--font-bold);
+  align-self: center;
+  color:var(--header-text-color);
+  margin: 0;
+}
+.timeline-wrapper p{
+  font-size: var(--small-font-size);
+  color: var(--header-text-color-ligth);
+  text-align: center;
+}
+
+.timeline {
+  display: inline;
+  list-style: none;
+  padding: 10px 0 10px;
+  position: relative;
+ 
+}
+
+.timeline li {
+  margin-bottom: 7rem;
+  position: relative;
+  display: flex;
+  color: #606060;
+  left: 0;
+}
+.timeline li .panel {
+  width: 22vw;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  text-align: center; 
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--header-text-color);
+  font-size: var(--small-font-size);
+  align-self: center;
+}
+.timeline-arrow-wrapper{
+  display: flex;
+  align-items: center;
+}
+.panel-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.panel h3{
+  font-size: var(--x-small-font-size);
+  font-weight: var(--font-normal);
+  text-align: center;
+  color: var(--header-text-color-ligther);
+}
+.calendar-icons{
+  padding-right: 0.2rem;
+}
+.panel-content-container .panel__list{
+  font-size: var(--x-small-font-size);
+  font-weight: var(--font-normal);
+  color: var(--header-text-color-ligth);
+  text-align: left;
+  padding-left: 1.9rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.timeline summary {
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: all 600ms cubic-bezier(0.2, 1, 0.3, 1);
+  font-weight: 600;
+  width: 100%;
+}
+.timeline .panel[open] summary {
+  margin-bottom: 20px;
+}
+.timeline .panel[open] h3,
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* psuedo element */
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  left: 49.95%;
+  position: absolute;
+  content: "";
+  width: 0.09rem;
+  background-color: var(--header-text-color-ligth);
+  border-radius: 0.2rem;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.timeline li:before {
+  content: "";
+  width: 1.02rem;
+  height: 1.02rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 50.4%;
+  background: var(--header-text-color-ligther);
+  margin-left: -11px;
+  z-index: 25;
+  opacity: 0.99;
+}
+
+.timeline li:nth-child(even) {
+  justify-content: flex-end;
+}
+
+@media (max-width: 996px){
+  .timeline-wrapper{
+    width: 100vw;
+  }
+  .timeline li .panel{
+    width: 38vw;
+  }
+  .heading{
+    font-size: 18px;
+  }
+  .panel h3{
+    font-size: 16px;
+  }
+  .panel p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px){
+  .path-div {
+    padding-top:30px;
+  }
+  div.timeline-wrapper{
+    max-width: 100%;
+    width: 100vw;
+  }
+  ul.timeline::before{
+    left: 1.5rem;
+  }
+  ul.timeline li::before{
+    left:0.9rem;
+    background-color: #1f79e3;  
+  }
+  .timeline li .panel{
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+  }
+  details.panel .heading{
+    font-size: 18px;
+  } 
+  .timeline li:nth-child(even) {
+    justify-content: flex-start;
+  }
+  div.timeline-wrapper h3{
+    font-size: 28px;
+    margin: 40px;
+  }
+  .timeline .panel[open] h3{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+  }
+  .timeline .panel[open] p{
+    font-size: 14px;
+
+  }
+  .timeline li{
+    margin-bottom: 100px;
+    width: 80vw;
+  }
+ 
+}

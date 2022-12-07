@@ -1,0 +1,20 @@
+
+@media (max-width: 2200px){
+    .toggle-button{
+        position: absolute;
+        top:0.98rem;
+        right: 2.1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        z-index: 55;
+    }
+    
+    .toggle-button .bar{
+        height: 3px;
+        width: 100%;
+        background-color: rgb(248, 248, 248);
+        border-radius: 10px;
+    }
+}

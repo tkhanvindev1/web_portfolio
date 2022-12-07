@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root{
+    --body-font: "Poppins", sans-serif;
+    --root-background:rgb(255, 255, 255);
+    --root-text-color:rgb(54, 54, 54);
+    --header-text-color:rgb(54, 54, 54);
+    --header-text-color-ligth:rgb(107, 107, 107);
+    --hero-button-color: rgb(54, 54, 54);
+    --border-color-ligth:rgba(107, 107, 107, 0.2);
+    --hero-sub-header-fontsize: 3.625rem;
+    --hero-header-fontsize: 1.575rem;
+    --hero-p-fontsize: 1.375rem;
+    --x-small-font-size: 0.875rem;
+    --small-font-size: 1.075rem;
+    
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-bolded: 700;
+  }
+div.service-section-div{
+    height: fit-content;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.service-section-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-top: 2px solid var(--header-text-color);
+    border-bottom: 2px solid var(--header-text-color); */
+    width: fit-content;
+    align-items: center;
+}
+
+div.service-section-header{
+    position: absolute;
+    top: -2.3rem;
+    background-color: var(--root-background);
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+div.service-items-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem; 
+}
+
+div.service-item{
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    height: 20vh;
+    border:1px solid var(--border-color-ligth);
+    border-radius: 4%;
+    padding: 1.2rem;
+    background-color: rgb(255, 255, 255);
+}
+.service-item-text{
+    font-size: var(--x-small-font-size);
+    font-weight: var(--font-normal);
+    padding: 0;
+    color:var(--header-text-color-ligth)
+}
+.section-header-icons{
+   color:#007FFF;
+   margin-right: 0.8rem;
+}
+
+.service-label-header{
+    font-weight: var(--font-bold);
+    font-size: var(--x-small-font-size);
+}

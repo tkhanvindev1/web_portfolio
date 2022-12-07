@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root{
+  --body-font: "Poppins", sans-serif;
+  --root-background:rgb(255, 255, 255);
+  --root-text-color:rgb(54, 54, 54);
+  --header-text-color:rgb(54, 54, 54);
+  --hero-button-color: rgb(54, 54, 54);
+  --hero-sub-header-fontsize: 2.625rem;
+  --hero-header-fontsize: 1.375rem;
+  --hero-p-fontsize: 1.375rem;
+  --small-font-size: 0.775rem; 
+  --x-small-font-size: 0.675rem; 
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+.navbar-div {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100vw;
+  background-color:var(--root-background);
+  position: sticky;
+  top: 0;
+  z-index: 35;
+}
+#navbar_active {
+  border-bottom: 2px solid var(--header-text-color);
+}
+
+.navbar-div ul {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5vw;
+  padding: 0;
+  border: none;
+  padding-right: 180px;
+}
+
+.navbar-div ul li a {
+  color: var(--root-text-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  margin-left: 1.2rem;
+  font-size: var(--x-small-font-size);
+  text-decoration: 0;
+  padding-bottom: 10px;
+}
+
+.navbar-div ul li{
+  list-style: none;
+  align-self: center;
+  display: inline-flex;
+}
+
+div #logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 13.2rem;
+  width: fit-content;
+}
+#logo-div a{
+  text-decoration: none;
+  color: var(--root-text-color);
+}
+#logo-div span{
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+}
+
+#logo-div #nav-message{
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+  padding-left: 0.42rem;
+}
+#contact-icon-wrap{
+ display: flex;
+ flex-direction: row;
+ height: fit-content;
+ width: fit-content;
+}
+#contact-icon-wrap a{
+ margin-right: 1.2rem;
+ display: flex;
+} 
+#contact-icon-wrap a svg{
+ height: 1.5rem;
+ width: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  font-weight: bold;
+}
+
+.navbar-div ul li a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--root-text-color);
+  
+}
+.toggle-button{
+  display: none;
+}
+
+
+@media (max-width: 996px) {
+  .navbar-div {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1f79e3;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 0;
+    border: none;
+  }
+  div #logo {
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+  }
+  div #logo-div {
+    margin: 10px;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    padding: 0;
+  }
+  #logo-img {
+    height: 52px;
+    width: 220px;
+    margin-left: 30px;
+  }
+  .navbar-div ul {
+    display: none;
+  }
+  .navbar-div ul li a {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    padding: 0; 
+    color: white;
+  }
+   .navbar-div ul li{
+    padding-top: 7px;
+  }
+  .navbar-div ul li a:hover {
+    border: none;
+  }
+  
+  .navbar-div ul.active{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background-color:#2074d3;
+    padding: 0;
+    margin: 0;
+  }
+  .toggle-button{
+    display: flex;
+}
+  
+}

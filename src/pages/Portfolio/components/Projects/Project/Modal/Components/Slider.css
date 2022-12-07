@@ -1,0 +1,51 @@
+div.modal-wrapper .img-container {
+  position: relative;
+  width: 100%;
+  height: 38vh;
+}
+div.img-container img {
+  width: 100%;
+  height: 100%;
+}
+.arrow-btn-container {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.arrow-btn-container .arrow-btn-wrapper button {
+  border: none;
+  width: 4vw;
+  background-color: rgb(146, 146, 146, 0.5);
+}
+
+.arrow-btn-container .arrow-btn-wrapper button:hover {
+  cursor: pointer;
+  background-color: rgba(65, 63, 63, 0.7);
+}
+
+.arrow-btn-container .arrow-btn-wrapper {
+  display: flex;
+}
+
+.icon__btn {
+  height:100%;
+  width:100%;
+  color: rgb(202, 202, 202);
+}
+
+@media (max-width: 420px) {
+  div.img-container img {
+    width: 100vw;
+    height: 400px;
+  }
+  .arrow-btn-container .arrow-btn-wrapper button {
+    width: 60px;
+    background-color: transparent;
+  }
+  .arrow-btn-container .arrow-btn-wrapper button:hover {
+    background-color: transparent;
+  }
+}

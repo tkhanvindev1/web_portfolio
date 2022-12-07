@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root{
+  --body-font: "Poppins", sans-serif;
+  --root-background:rgb(255, 255, 255);
+  --root-text-color:rgb(54, 54, 54);
+  --header-text-color:rgb(54, 54, 54);
+  --hero-button-color: rgb(54, 54, 54);
+  --header-text-color-ligther:rgb(125, 125, 125);
+  --border-color-light:rgba(107, 107, 107, 0.2);
+  --hero-sub-header-fontsize: 3.625rem;
+  --hero-header-fontsize: 1.575rem;
+  --hero-p-fontsize: 1.375rem;
+  --x-small-font-size: 0.775rem;
+  --xx-small-font-size: 0.475rem;
+  --small-font-size: 1.075rem;
+  --details-color: #007FFF;
+  
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-bolded: 700;
+}
+
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  position: relative;
+  /* border: 2px solid var(--header-text-color); */
+  padding: 2rem;
+  width: 100vw;
+  height: 70vh;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  --layout-background-light: #dcdcdc;
+}
+.text-center {
+  display: flex;
+  flex-direction: column;
+}
+.text-center h3 {
+  font-size: var(--hero-header-fontsize);
+  font-weight: var(--font-bold);
+  align-self: center;
+  color:var(--header-text-color);
+  margin: 0;
+  top:-1.2rem;
+  background-color: var(--root-background);
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+#work_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.3rem;
+  padding-top: 0.2rem;
+}
+.text-center p{
+  font-size: var(--small-font-size);
+  color: var(--header-text-color-ligth);
+  text-align: center;
+}
+.row {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--layout-background-light);
+  border:1px solid var(--border-color-ligth);
+  width: fit-content;
+  align-self: center;
+}
+.row .column {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+}
+.portfolio-item{
+  border-radius: 4%;
+  width: fit-content;
+}
+
+.image {
+  width: 35rem;
+  position: relative;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+ 
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: var(--root-text-color);
+  font-family: var(--body-font);
+}
+
+.image__overlay > * {
+  transform: translateY(30px);
+  transition: transform 0.35s;
+}
+
+.image__overlay .image__heading {
+  font-size: var(--small-font-size);
+  margin-bottom: 2px;
+  padding-bottom: 0;
+  font-weight: var(--font-bold);
+}
+
+.image__overlay .image__subhead {
+  font-size: var(--x-small-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+#button_btn {
+  font-family: var(--body-font);
+  font-weight: var(--font-bold);
+  font-size: var(--x-small-font-size);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 1.5;
+  color: var(--details-color);
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  height: 2.2rem;
+  border-radius: 2rem;
+}
+
+#button_btn:hover {
+  --btn-hover-background:rgb(231, 231, 231,0.2);
+  background-color: var(--btn-hover-background);
+}
+.button-arrow-wrapper{
+  display: flex;
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
+
+.wrapper .img-container img{
+  height: 640px;
+  width: 100%;
+}
+
+
+
+@media (max-width: 420px){
+  div.text-center h3{
+    font-size: 34px;
+    margin: 40px;
+  }
+  .portfolio-item .image{
+    width: 100vw;
+  }
+  div.image__overlay{
+    opacity: 1;
+    position: static;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  div.image__overlay > * {
+    transform: translateY(0px);
+  }
+  div.image__overlay .image__heading{
+    font-size: 22px;
+  }
+  div.image__overlay .image__subhead{
+    font-size: 20px;
+  }
+  div.image__overlay .image__button #button_btn{
+    font-size: 20px;
+    height: 55px;
+    width: 250px;
+  }
+
+  /* modal */
+
+  div#overlay .wrapper{
+    width: 100vw;
+    position: static;
+    padding: 0;
+    margin: 0;
+  }
+  }
+
