@@ -42,7 +42,7 @@ div .footnote{
     margin-top: 55px;
 }
 
-@media (max-width: 420px){
+@media (max-width: 996px){
     div .footnote{
         font-size: 12px;
         margin-top: 15px;

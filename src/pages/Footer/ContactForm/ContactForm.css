@@ -29,7 +29,6 @@
   justify-content: center;
   height: fit-content;
   background-color: var(--root-background);
- 
 }
 .contact-form-div form {
   display: flex;
@@ -63,7 +62,7 @@
   flex-direction: row;
   justify-content: center;
 }
-#contact_icon{
+#contact_icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +79,6 @@
   margin-left: 15px;
   color: #3e83d4;
 }
-
 
 .contact-form-div form input::placeholder,
 textarea::placeholder {
@@ -126,12 +124,12 @@ textarea[type="text"] {
   font-size: var(--x-small-font-size);
 }
 
-#send_icon{
+#send_icon {
   display: flex;
   margin-left: 0.3rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 996px) {
   .contact-form-div {
     width: 100vw;
   }
@@ -166,12 +164,30 @@ textarea[type="text"] {
     text-align: start;
   }
   .contact-form-div form .submit-button {
-    width: 80vw;
+    width: 40vw;
     height: 51px;
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
     font-size: 20px;
     align-self: center;
+  }
+}
+@media (max-width: 420px) {
+  #username,
+  #email,
+  #message {
+    width: 70vw;
+    margin: 25px;
+    border-radius: 7px;
+    border: 2px solid var(--border-color-light);
+    background-color: transparent;
+  }
+  .contact-form-div form .submit-button {
+    width: 63vw;
+    height: 51px;
+    width: 80vw;
+    font-size: 20px;
+    border-radius: 20rem;
   }
 }

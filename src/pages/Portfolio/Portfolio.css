@@ -76,11 +76,13 @@
   border:1px solid var(--border-color-ligth);
   width: fit-content;
   align-self: center;
+  
 }
 .row .column {
   display: inline-flex;
   flex-direction: column;
   text-align: center;
+ 
 }
 .portfolio-item{
   border-radius: 4%;
@@ -95,7 +97,6 @@
 .image__img {
   display: block;
   width: 100%;
- 
 }
 
 .image__overlay {
@@ -120,7 +121,7 @@
 }
 
 .image__overlay .image__heading {
-  font-size: var(--small-font-size);
+  font-size: var(--hero-header-fontsize);
   margin-bottom: 2px;
   padding-bottom: 0;
   font-weight: var(--font-bold);
@@ -176,9 +177,12 @@
 
 
 @media (max-width: 420px){
+  #portfolio{
+    height: auto;
+  }
   div.text-center h3{
-    font-size: 34px;
-    margin: 40px;
+    font-size: 26px;
+    margin: 20px;
   }
   .portfolio-item .image{
     width: 100vw;

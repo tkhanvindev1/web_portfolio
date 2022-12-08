@@ -6,7 +6,7 @@ import "/Users/vinhnguyen/Documents/DevMountain/f25/spec/Week 3/css-basic-clone/
 export default function Path(status) {
   return (
     <div id="path" className="path-div">
-      <div className="timeline-wrapper">
+      <div className="timeline-wrapper" data-aos="fade-up">
         <h3>Qualification</h3>
         <p>My personal journey</p>
         <ul className="timeline">
@@ -29,7 +29,7 @@ export default function Path(status) {
               <h3><span className="calendar-icons"><AiTwotoneCalendar/></span>June 2022 - September 2022</h3>
               <div className="panel-content-container">
               <p className="panel__list">- Learned and utilized Javascript libraries like: React, Next, Redux.</p>
-              <p className="panel__list">- Built a Full-stack application with the goal to help people track their daily nutritional intakes.</p>
+              <p className="panel__list">- Built a Full-stack application utilized ReactJs, PostgreSql and NodeJs</p>
               <p className="panel__list"></p>
               </div>
             </details>

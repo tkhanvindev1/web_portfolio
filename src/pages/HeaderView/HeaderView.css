@@ -9,6 +9,7 @@
   align-items: center;
   --header-text-color:rgb(54, 54, 54);
   --hero-background-color:rgba(190, 190, 190, 0.2);
+  --hero-background-color-darker:rgba(190, 190, 190, 0.5);
   --hero-button-color: rgb(54, 54, 54);
   --hero-sub-header-fontsize: 3.625rem;
   --hero-header-fontsize: 1.575rem;
@@ -127,7 +128,7 @@
   height: 55vh;
   /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
   position: relative;
-  background-color: var(--hero-background-color);
+  background-color: var(--hero-background-color-darker);
   margin-bottom: 2rem;
 }
 .banner-text-component-container {
@@ -146,6 +147,10 @@
 }
 .banner-text-wrapper > * {
   width: fit-content;
+}
+.banner-text-items{
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-text-div h3 {
@@ -241,22 +246,43 @@ div#picture{
 }
 @media (max-width: 996px) {
   .banner-text-component-container {
+    display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
+    height: auto;
   }
   div.banner-text-wrapper {
     text-align: center;
     align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .banner-text-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
   }
   #picture img {
-    width: 320px;
-    height: 250px;
+    width: 12.5rem;
+    height: 12.5rem;
+    position: absolute;
+    top:6rem;
+    align-self: center;
   }
   h2#banner-header-text {
-    font-size: 48px;
+    font-size: var(--hero-header-fontsize);
+    margin-top: 0.2rem;
+  }
+  #line-element{
+    display: none;
   }
   h3#banner-pre-header-text {
     font-size: 18px;
@@ -272,96 +298,36 @@ div#picture{
  
 }
 @media (max-width: 420px) {
-  .header-page-div > * {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+  div.banner-text-wrapper{
+    align-self: center;
   }
-
-  .banner-text-div {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  #picture img{
+    height: 11rem;
+    width: 11rem;
   }
-  .banner-text-wrapper {
-    display: flex;
-    margin-top: 44px;
-  }
-  .banner-text-component-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  .banner-text-wrapper #banner-content-text {
+  #banner-content-text{
     width: 90vw;
-    font-size: 17px;
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
-
-  .banner-text-wrapper .banner-text {
-    font-size: 20px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    align-self: center;
+  .main-buttons button{
+    border-radius: 20rem;
+    /* main styling at app.css */
   }
-
-  div#picture {
+  #btn-arrow-element{
+    display: none;
+  }
+  .tables-container .table-content{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;   
+  }
+  .table-component-wrap{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+  }
+  .tables-container .skill-table{
+    padding-top: 5px;
   }
 
-  div#picture img {
-    position: static;
-    height: 225px;
-    width: 328px;
-    z-index: 0;
-    align-self: center;
-  }
-  div.table-component-wrap {
-    padding: 0;
-    margin: 0;
-  }
-  div.table-component-wrap h3 {
-    font-size: 28px;
-    margin: 40px;
-  }
-  div.tables-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  div.tables-container > * {
-    width: 60vw;
-    padding: 0;
-    margin: 10px;
-  }
-  .skill-table tr {
-    width: 100%;
-  }
-
-  .skill-table .table-header {
-    width: 100%;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  div.table-content > * {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-  }
+  
 }

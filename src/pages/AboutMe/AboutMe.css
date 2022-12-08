@@ -141,3 +141,63 @@ button.bio-links{
 .detail-content-wraper p{
   font-size: var(--small-font-size);
 }
+
+@media (max-width: 996px) {
+  .about-me-div{
+    height: 70vh;
+    margin-bottom: 4rem;
+  }
+  .detail-content-wraper{
+    height: 15vh;
+  }
+  .detail-content-wraper p{
+    font-size: var(--x-small-font-size);
+  }
+  .bio-user-div{
+    height: auto;
+  }
+  #bio_name{
+    font-size: 1.2rem;
+  }
+  #bio_location{
+    font-size: 1rem;
+  }
+  .btn-container{
+    padding-top: 0;
+  }
+  #resume-btn{
+    font-size: small;
+  }
+
+}
+
+@media (max-width: 420px){
+  .about-me-container{
+    width: 85vw;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .detail-content-wraper{
+    height: auto
+  }
+  .about-me-div{
+    position: relative;
+  }
+  .btn-container{
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  #resume-btn{
+  background-color: #007fff;
+  width: 80vw;
+  height: 51px;
+  font-size: var(--small-font-size);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+}

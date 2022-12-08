@@ -164,10 +164,14 @@ p {
     width: 100vw;
   }
   .timeline li .panel{
-    width: 38vw;
+    width: 34vw;
+   padding-left: 5rem;
+  }
+  .timeline li:nth-child(even) {
+    padding-right: 5rem;
   }
   .heading{
-    font-size: 18px;
+    font-size: 14px;
   }
   .panel h3{
     font-size: 16px;
@@ -179,33 +183,45 @@ p {
 
 @media (max-width: 420px){
   .path-div {
-    padding-top:30px;
+    padding-top:1rem;
   }
   div.timeline-wrapper{
     max-width: 100%;
     width: 100vw;
   }
+  ul.timeline li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+ 
+  }
   ul.timeline::before{
-    left: 1.5rem;
+    left: 2rem;
   }
   ul.timeline li::before{
-    left:0.9rem;
-    background-color: #1f79e3;  
+    left:2.2rem;
   }
   .timeline li .panel{
-    width: 90vw;
+    width: 70vw;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1.5rem;
   }
   details.panel .heading{
-    font-size: 18px;
+    font-size: 16px;
+    
   } 
   .timeline li:nth-child(even) {
-    justify-content: flex-start;
+    padding-right: 3rem;
   }
   div.timeline-wrapper h3{
     font-size: 28px;
-    margin: 40px;
+    margin: 1rem;
+    margin-bottom: 0;
   }
   .timeline .panel[open] h3{
     font-size: 16px;
@@ -215,11 +231,6 @@ p {
   }
   .timeline .panel[open] p{
     font-size: 14px;
-
+    text-align: center;
   }
-  .timeline li{
-    margin-bottom: 100px;
-    width: 80vw;
-  }
- 
 }

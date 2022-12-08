@@ -10,7 +10,7 @@ const BUTTON_WRAPPER_STYLES = {
 
 
 export default function Project(project) {
-  const { id, project_name, body } = project.project;
+  const { id, project_name, body, image } = project.project;
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="column" id={id}>
@@ -18,7 +18,7 @@ export default function Project(project) {
         <div className="image">
           <img
             className="image__img"
-            src="https://i.pinimg.com/564x/c5/85/40/c58540b6ed16a8203d3f1f4f900e058c.jpg"
+            src={image}
           ></img>
           <div className="image__overlay">
             <div className="image__heading">{project_name}</div>

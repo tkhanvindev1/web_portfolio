@@ -5,7 +5,7 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 export default function ServiceSection() {
   return (
     <div className="service-section-div">
-      <div className="service-section-container">
+      <div className="service-section-container" data-aos="fade-up">
         <div className="service-section-header">
           <h2 id="service-header">What I deliever</h2>
         </div>
