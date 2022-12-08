@@ -298,6 +298,9 @@ div#picture{
  
 }
 @media (max-width: 420px) {
+  .banner-text-div{
+    height: 70vh;
+  }
   div.banner-text-wrapper{
     align-self: center;
   }
