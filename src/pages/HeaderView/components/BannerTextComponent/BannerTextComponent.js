@@ -18,7 +18,7 @@ export default function BannerTextComponent() {
         </div>
         </div>
       </div>
-      <div data-aos="fade-left" id="picture">
+      <div id="picture">
       <img src={picture}/>
       </div>
       </div>
