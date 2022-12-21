@@ -16,24 +16,6 @@ export default function ContactForm() {
     console.log(message);
   }, [userName, userEmail, message]);
 
-  // const eventHandler = (name, email, message) => {
-  //   if (!userName == "" && !userEmail == "" && !message == "") {
-  //     const user = {
-  //       name: name,
-  //       email: email,
-  //       message: message,
-  //     };
-  //     console.log(user)
-  //     axios.post("http://localhost:5050/user", user)
-  //     .then((res) => {
-  //     console.log(res);
-  //     alert('Thank You for reaching out! I will reply to you very soon!')
-  //   });
-  //   } else {
-  //     alert("Please fill all fields correctly.");
-  //   }
-  // };
-
   return (
     <div id="contact" className="contact-form-div">
       <form action="https://formsubmit.co/el/volovi" method="POST">
@@ -86,12 +68,7 @@ export default function ContactForm() {
     
         <button
           className="submit-button"
-          type="submit"
-          // onClick={(e) => {
-          //   e.preventDefault();
-          //   eventHandler(userName, userEmail, message);
-          // }}>
-          >
+          type="submit">
             submit<span id="send_icon"><TbSend/></span>
         </button>
       </form>
