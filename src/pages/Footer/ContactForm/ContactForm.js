@@ -36,7 +36,7 @@ export default function ContactForm() {
 
   return (
     <div id="contact" className="contact-form-div">
-      <form action="https://formsubmit.co/gatorfl2014@gmail.com" method="POST">
+      <form action="https://formsubmit.co/el/volovi" method="POST">
         <h2 className="">CONTACT<span id="contact_icon"><MdMailOutline/></span></h2>
         <h3 className="">
           Have a question?<span>LET'S CONNECT!</span>
